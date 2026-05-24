@@ -5,7 +5,7 @@ ec2 = boto3.client('ec2', region_name='us-east-1')
 
 # Launch EC2 instance
 response = ec2.run_instances(
-    ImageId='ami-0c02fb55956c7d316',   # Amazon Linux 2 AMI
+    ImageId='ami-Linux',   # Amazon Linux 2 AMI
     InstanceType='t2.micro',
     KeyName='my-key-pair',
     MinCount=1,
